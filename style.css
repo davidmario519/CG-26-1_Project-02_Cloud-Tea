@@ -1,8 +1,64 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 canvas {
   display: block;
+}
+
+#onboarding {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: #0a0a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.6s ease;
+}
+
+#onboarding.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.onboarding-content {
+  text-align: center;
+  color: #ddd;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.onboarding-content h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.onboarding-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 3rem;
+}
+
+.start-btn {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #555;
+  border-radius: 100px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  border-color: #fff;
+  color: #fff;
 }
