@@ -1,10 +1,3 @@
----
-date: "2026-03-24"
-tags:
-  - resource
-source: ""
-daily note: "[[2026-03-24]]"
----
 # Project 02 — Cave Explorer: Audio-Reactive Interactive Shading
 
 | **Title**   | Cave Explorer: Audio-Reactive Interactive Shading    |
